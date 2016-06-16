@@ -19,7 +19,7 @@ class RF_General {
 
       // Admin bar and menus customization
       add_action( 'admin_menu', array( $this, 'remove_menus' ) );
-      add_action( 'admin_init', array( $this, 'remove_submenus' ), 102 );
+      add_action( 'admin_menu', array( $this, 'remove_submenus' ), 110 );
 
       // Customize post type UI
       add_filter( 'post_updated_messages', array( $this, 'set_updated_messages' ) );
